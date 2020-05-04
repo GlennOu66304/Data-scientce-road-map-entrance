@@ -31,3 +31,7 @@
 <br>我主要关注CS相关课程。推荐下我觉得不错的：
 <br>https://www.zhihu.com/question/22436320
 
+### Blogs
+1.LADA ADAMIC
+<br>http://www.ladamic.com/
+

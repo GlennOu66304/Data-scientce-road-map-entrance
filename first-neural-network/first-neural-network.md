@@ -330,6 +330,8 @@ Executing transaction: done
 ```
 jupyter notebook Your-first-neural-network.ipynb
 ```
-5.Project building refer:你的第一个神经网络
+5.Project enviroment building refer:你的第一个神经网络
 <br>https://classroom.udacity.com/nanodegrees/nd025-cn/parts/fecc645f-8b1f-4d73-9754-7b7b380f01e8/modules/21f8b76b-60d1-428d-9b8e-ac17e4837359/lessons/4c03fd28-20ca-40e6-89cc-e72ae96141c2/project
 
+6. Project requiremtn:Predicting Bike-Sharing Patterns
+<br>https://review.udacity.com/#!/rubrics/932/view

@@ -59,7 +59,9 @@ move to My project direct and write the code below:
 127.0.0.1 - - [06/May/2020 23:06:50] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [06/May/2020 23:06:55] "GET /favicon.ico HTTP/1.1" 404 -
 ```
-Open the link http://127.0.0.1:5000/ in Chrome to see " Hello, World! " out put
+Open the link http://127.0.0.1:5000/ in Chrome to see " Hello, World! " output
+<br>A Minimal Application
+<br>https://flask.palletsprojects.com/en/1.1.x/quickstart/#a-minimal-application
 
 
 

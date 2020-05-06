@@ -34,6 +34,7 @@ Installation
 
 ## 2.Run Hello World ! in Browser (Make A Minimal Application)
 <br>open the project"myproject" in pycharm, Find myproject-->venv Then Open it in Pycharm;
+![ ](https://github.com/GlennOu66304/Data-Sciences-in-R/blob/R-Learning/image/Pytcharm%20open%20fold.png)
 <br>creat a hello.py file  the venv fold and seprate from bin,include lib fold.
 <br>write the code in hello.py file and save it.
 ```

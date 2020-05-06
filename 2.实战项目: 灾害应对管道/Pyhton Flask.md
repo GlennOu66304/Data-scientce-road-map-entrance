@@ -1,6 +1,6 @@
 # Pyhton Flask
-## Enviroment Building:
-1.install Flask:
+## 1.Enviroment Building:
+install Flask:
 ```
 Last login: Wed May  6 21:25:51 on ttys000
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro ~ % mkdir myproject 
@@ -32,7 +32,7 @@ You should consider upgrading via the 'pip install --upgrade pip' command.
 Installation
 <br>https://flask.palletsprojects.com/en/1.1.x/installation/#installation
 
-## Run Hello World ! in Browser (Make A Minimal Application)
+## 2.Run Hello World ! in Browser (Make A Minimal Application)
 <br>open the project"myproject" in pycharm, Find myproject-->venv Then Open it in Pycharm;
 <br>creat a hello.py file  the venv fold and seprate from bin,include lib fold.
 <br>write the code in hello.py file and save it.
@@ -59,7 +59,7 @@ move to My project direct and write the code below:
 127.0.0.1 - - [06/May/2020 23:06:50] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [06/May/2020 23:06:55] "GET /favicon.ico HTTP/1.1" 404 -
 ```
-
+Open the link http://127.0.0.1:5000/ in Chrome to see " Hello, World! " out put
 
 
 

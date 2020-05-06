@@ -325,4 +325,11 @@ Verifying transaction: done
 Executing transaction: done
 (dlnd) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro ~ %
 ```
+4. Go to your Anaconda software to find dlnd enviroment and launch it to start your project building:
+<br>you can also try code below to launch the jupyter book.
+```
+jupyter notebook Your-first-neural-network.ipynb
+```
+5.Project building refer:你的第一个神经网络
+<br>https://classroom.udacity.com/nanodegrees/nd025-cn/parts/fecc645f-8b1f-4d73-9754-7b7b380f01e8/modules/21f8b76b-60d1-428d-9b8e-ac17e4837359/lessons/4c03fd28-20ca-40e6-89cc-e72ae96141c2/project
 

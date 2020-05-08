@@ -104,7 +104,107 @@ Logging in... done
 Logged in as 1564468177glen@gmail.com
 (worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro ~ % 
 ```
-
+5. Remove the app.run() in worldbank.py file and save it
+<br>6. cd web_app make sure that you are under web_app directory
+<br>7.Creat and file Procfile by runing below code in terminal and you will see a rocfile file in web_app directory
+```
+touch Procfile
+```
+open the rocfile file, and put the code in it:
+```
+web gunicorn worldbank:app
+```
+6. in virtual enviroment, Creat a requirements file and load the package:
+```
+(base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro ~ % source /Users/zhanghuiqiao/worldbankvenv/bin/activate  
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro ~ % cd /Users/zhanghuiqiao/web_app  
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % pip3 freeze > requirements.txt 
+```
+7. Push the code to heroku:
+```
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % git init 
+Reinitialized existing Git repository in /Users/zhanghuiqiao/web_app/.git/
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % git add .  
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % git commit -m 'first commit'  
+[master ffe546a] first commit
+ 1 file changed, 14 insertions(+), 255 deletions(-)
+ rewrite requirements.txt (97%)
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % heroku create dsnd-udacity-webapp-1 
+Creating ⬢ dsnd-udacity-webapp-1... !
+ ▸    Name dsnd-udacity-webapp-1 is already taken
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % heroku create dsnd-udacity-webapp-2 
+Creating ⬢ dsnd-udacity-webapp-2... done
+https://dsnd-udacity-webapp-2.herokuapp.com/ | https://git.heroku.com/dsnd-udacity-webapp-2.git
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % git remote -v 
+heroku	https://git.heroku.com/dsnd-udacity-webapp-1.git (fetch)
+heroku	https://git.heroku.com/dsnd-udacity-webapp-1.git (push)
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % git push heroku master  
+Enumerating objects: 34, done.
+Counting objects: 100% (34/34), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (30/30), done.
+Writing objects: 100% (34/34), 277.78 KiB | 4.34 MiB/s, done.
+Total 34 (delta 6), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.10
+remote: -----> Installing pip
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting click==7.1.2
+remote:          Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+remote:        Collecting Flask==1.1.2
+remote:          Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting itsdangerous==1.1.0
+remote:          Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+remote:        Collecting Jinja2==2.11.2
+remote:          Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
+remote:        Collecting MarkupSafe==1.1.1
+remote:          Downloading MarkupSafe-1.1.1-cp36-cp36m-manylinux1_x86_64.whl (27 kB)
+remote:        Collecting numpy==1.18.4
+remote:          Downloading numpy-1.18.4-cp36-cp36m-manylinux1_x86_64.whl (20.2 MB)
+remote:        Collecting pandas==1.0.3
+remote:          Downloading pandas-1.0.3-cp36-cp36m-manylinux1_x86_64.whl (10.0 MB)
+remote:        Collecting plotly==4.7.0
+remote:          Downloading plotly-4.7.0-py2.py3-none-any.whl (11.5 MB)
+remote:        Collecting python-dateutil==2.8.1
+remote:          Downloading python_dateutil-2.8.1-py2.py3-none-any.whl (227 kB)
+remote:        Collecting pytz==2020.1
+remote:          Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+remote:        Collecting retrying==1.3.3
+remote:          Downloading retrying-1.3.3.tar.gz (10 kB)
+remote:        Collecting six==1.14.0
+remote:          Downloading six-1.14.0-py2.py3-none-any.whl (10 kB)
+remote:        Collecting Werkzeug==1.0.1
+remote:          Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
+remote:        Building wheels for collected packages: retrying
+remote:          Building wheel for retrying (setup.py): started
+remote:          Building wheel for retrying (setup.py): finished with status 'done'
+remote:          Created wheel for retrying: filename=retrying-1.3.3-py3-none-any.whl size=11430 sha256=0cb1fa9eccaefd59766d17a398b00043db95e703d580d1e30f862db767b62a72
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-96dezwjy/wheels/ac/cb/8a/b27bf6323e2f4c462dcbf77d70b7c5e7868a7fbe12871770cf
+remote:        Successfully built retrying
+remote:        Installing collected packages: click, MarkupSafe, Jinja2, Werkzeug, itsdangerous, Flask, gunicorn, numpy, six, python-dateutil, pytz, pandas, retrying, plotly
+remote:        Successfully installed Flask-1.1.2 Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.2 gunicorn-20.0.4 itsdangerous-1.1.0 numpy-1.18.4 pandas-1.0.3 plotly-4.7.0 python-dateutil-2.8.1 pytz-2020.1 retrying-1.3.3 six-1.14.0
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 92M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://dsnd-udacity-webapp-1.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dsnd-udacity-webapp-1.git
+ * [new branch]      master -> master
+(worldbankvenv) (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro web_app % 
+```
+部署
+<br>https://classroom.udacity.com/nanodegrees/nd025-cn/parts/f3a1a2fe-76b5-4dd0-85c1-114bd1c1a990/modules/d62339d1-ff64-48e1-9fac-b7d3e129c24b/lessons/060b5796-3ac0-44fc-91dc-d8bdd5738975/concepts/94d181ca-4e7c-46c5-971c-fbc9d4a59f2b
 
 
 

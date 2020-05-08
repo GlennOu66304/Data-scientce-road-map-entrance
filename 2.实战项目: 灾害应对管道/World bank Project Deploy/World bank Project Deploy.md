@@ -210,6 +210,8 @@ To https://git.heroku.com/dsnd-udacity-webapp-1.git
 部署
 <br>https://classroom.udacity.com/nanodegrees/nd025-cn/parts/f3a1a2fe-76b5-4dd0-85c1-114bd1c1a990/modules/d62339d1-ff64-48e1-9fac-b7d3e129c24b/lessons/060b5796-3ac0-44fc-91dc-d8bdd5738975/concepts/94d181ca-4e7c-46c5-971c-fbc9d4a59f2b
 
+Pushing To Heroku Fails - No Such App Fatal
+<br>https://stackoverflow.com/questions/34379130/pushing-to-heroku-fails-no-such-app-fatal
 
 
 

@@ -1,4 +1,8 @@
 # World bank Project Deploy
+insstall herokou from the link below:
+<br>Heroku on mac
+<br>https://github.com/GlennOu66304/Udacity-Data-Scientist/blob/master/2.%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE:%20%E7%81%BE%E5%AE%B3%E5%BA%94%E5%AF%B9%E7%AE%A1%E9%81%93/Heroku%20on%20mac.md
+
 1.First Creat a "web_app" fold in your Computer directory:
 ```
 mkdir web_app

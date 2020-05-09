@@ -1,19 +1,21 @@
 # lorem-ipsum-demo-master Heroku.
-## insstall herokou from the link below:
+Finished link:
+<br>https://lorem-ipsum-demo-3.herokuapp.com/
+## 1.insstall herokou from the link below:
 <br>Heroku on mac
 <br>https://github.com/GlennOu66304/Udacity-Data-Scientist/blob/master/2.%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE:%20%E7%81%BE%E5%AE%B3%E5%BA%94%E5%AF%B9%E7%AE%A1%E9%81%93/Heroku%20on%20mac.md
 
-## download the code from link below:( I will list the Code fold under project too)
+## 2. download the code from link below:( I will list the Code fold under project too)
 pg0408 /lorem-ipsum-demo
 <br>https://github.com/pg0408/lorem-ipsum-demo
 
-## git inial project
+## 3. git inial project
 ```
 Last login: Sun May 10 00:13:47 on ttys000
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro ~ % cd /Users/zhanghuiqiao/Downloads/((((b(((b((b(b(b(b((b(((((((base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro lorem-ipsum-demo-master % git init  
 Initialized empty Git repository in /Users/zhanghuiqiao/Downloads/lorem-ipsum-demo-master/.git/
 ```
-## heroku login
+## 4. heroku login
 ```
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro lorem-ipsum-demo-master % heroku login 
 heroku: Press any key to open up the browser to login or q to exit: 
@@ -21,7 +23,7 @@ Opening browser to https://cli-auth.heroku.com/auth/cli/browser/9b08b8c2-0e63-43
 Logging in... done
 Logged in as 1564468177glen@gmail.com
 ```
-### Hero create a project
+### 5. Hero create a project
 ```
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro lorem-ipsum-demo-master % heroku create lorem-ipsum-demo-2 
 Creating ⬢ lorem-ipsum-demo-2... !
@@ -29,7 +31,7 @@ Creating ⬢ lorem-ipsum-demo-2... !
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro lorem-ipsum-demo-master % heroku create lorem-ipsum-demo-3 
 Creating ⬢ lorem-ipsum-demo-3... done
 ````
-### deploy the project to herku
+### 6. deploy the project to herku
 ```
 https://lorem-ipsum-demo-3.herokuapp.com/ | https://git.heroku.com/lorem-ipsum-demo-3.git
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro lorem-ipsum-demo-master % git add .  
@@ -482,9 +484,49 @@ To https://git.heroku.com/lorem-ipsum-demo-3.git
  * [new branch]      master -> master
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro lorem-ipsum-demo-master % 
 ```
-## Run project in local, you can use http://localhost:3000/ to log into the webpage.
-````
+## 7. Run project in local, you can use http://localhost:3000/ to log into the webpage.
+```
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro ~ % cd /Users/zhanghuiqiao/Downloads/lorem-ipsum-demo-master
 (base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro lorem-ipsum-demo-master % node /Users/zhanghuiqiao/Downloads/lorem-ipsum-demo-master/app.js
 Server is running...
 ```
+## 8. Log of Heroku
+```
+Last login: Sun May 10 00:14:37 on ttys001
+(base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro ~ % cd /Users/zhanghuiqiao/Downloads/lorem-ipsum-demo-master     
+(base) zhanghuiqiao@zhanghuiqiaodeMacBook-Pro lorem-ipsum-demo-master % heroku logs --tail 
+2020-05-09T16:17:28.352260+00:00 app[api]: Initial release by user 1564468177glen@gmail.com
+2020-05-09T16:17:28.352260+00:00 app[api]: Release v1 created by user 1564468177glen@gmail.com
+2020-05-09T16:17:28.505402+00:00 app[api]: Enable Logplex by user 1564468177glen@gmail.com
+2020-05-09T16:17:28.505402+00:00 app[api]: Release v2 created by user 1564468177glen@gmail.com
+2020-05-09T16:18:42.000000+00:00 app[api]: Build started by user 1564468177glen@gmail.com
+2020-05-09T16:18:55.689710+00:00 app[api]: Deploy 9e0459f6 by user 1564468177glen@gmail.com
+2020-05-09T16:18:55.689710+00:00 app[api]: Release v3 created by user 1564468177glen@gmail.com
+2020-05-09T16:18:55.705337+00:00 app[api]: Scaled to web@1:Free by user 1564468177glen@gmail.com
+2020-05-09T16:18:56.000000+00:00 app[api]: Build succeeded
+2020-05-09T16:19:01.145516+00:00 app[web.1]: Server is running...
+2020-05-09T16:19:02.487353+00:00 heroku[web.1]: State changed from starting to up
+2020-05-09T16:19:09.010693+00:00 heroku[router]: at=info method=GET path="/" host=lorem-ipsum-demo-3.herokuapp.com request_id=8d328dc3-c614-4ac7-bf02-d3b46f14773c fwd="104.247.130.170" dyno=web.1 connect=1ms service=39ms status=200 bytes=915 protocol=https
+2020-05-09T16:19:09.821479+00:00 heroku[router]: at=info method=GET path="/styles.css" host=lorem-ipsum-demo-3.herokuapp.com request_id=5cc9fa1c-8a05-40fb-8a0a-bb6370cc6959 fwd="104.247.130.170" dyno=web.1 connect=0ms service=13ms status=200 bytes=626 protocol=https
+2020-05-09T16:19:10.590409+00:00 heroku[router]: at=info method=GET path="/script.js" host=lorem-ipsum-demo-3.herokuapp.com request_id=9e8a9b30-3073-44e7-81b3-95f0bfa53a8f fwd="104.247.130.170" dyno=web.1 connect=0ms service=5ms status=200 bytes=28635 protocol=https
+2020-05-09T16:19:11.154422+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=lorem-ipsum-demo-3.herokuapp.com request_id=f7d943d8-5969-4efc-bfbf-d440205a7636 fwd="104.247.130.170" dyno=web.1 connect=1ms service=17ms status=404 bytes=394 protocol=https
+```
+
+## 9. Possible help page:
+How to deploy your app to the web using Express.js and Heroku
+<br>https://www.freecodecamp.org/news/how-to-deploy-your-site-using-express-and-heroku/
+<br>http://localhost:3000/
+<br>How do I read Medium articles for free?
+<br>https://www.quora.com/How-do-I-read-Medium-articles-for-free
+<br>Can't push to the heroku
+<br>https://stackoverflow.com/questions/38841284/cant-push-to-the-heroku/50905814
+<br>Why does my app "fail to detect" a buildpack?
+<br>https://help.heroku.com/1MC2J0GF/why-does-my-app-fail-to-detect-a-buildpack
+<br>Logging
+<br>https://devcenter.heroku.com/articles/logging#view-logs
+<br>How to fix npm ERR! missing script: start
+<br>https://techoverflow.net/2019/04/01/how-to-fix-npm-err-missing-script-start/
+<br>Start script missing error when running npm start
+<br>https://stackoverflow.com/questions/31976722/start-script-missing-error-when-running-npm-start
+<br>Staging Files with Git
+<br>https://rubygarage.org/blog/most-basic-git-commands-with-examples#article_title_6

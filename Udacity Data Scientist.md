@@ -30,6 +30,10 @@
 <br>https://www.oreilly.com/data/free/
 <br>我主要关注CS相关课程。推荐下我觉得不错的：
 <br>https://www.zhihu.com/question/22436320
+<br>Data Scientist 炼成记录-更新完毕2018年12月 | 机器学习练成记录 
+<br>https://www.1point3acres.com/bbs/thread-76429-1-1.html
+<br>硕士水平Data Science 自学课程
+<br>https://www.1point3acres.com/bbs/thread-71418-1-1.html
 
 ### Blogs
 1.LADA ADAMIC

@@ -39,7 +39,7 @@
 1.LADA ADAMIC
 <br>http://www.ladamic.com/
 
-2. Series Course:
+2.Series Course:
 <br>Build a Data Science Web App with Streamlit and Python
 <br>https://www.coursera.org/projects/data-science-streamlit-python
 <br>IBM Data Science Professional Certificate

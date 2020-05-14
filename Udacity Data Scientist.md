@@ -36,10 +36,10 @@
 <br>https://www.1point3acres.com/bbs/thread-71418-1-1.html
 
 ### Blogs
-1.LADA ADAMIC
+LADA ADAMIC
 <br>http://www.ladamic.com/
 
-2.Series Course:
+### Series Course:
 <br>Build a Data Science Web App with Streamlit and Python
 <br>https://www.coursera.org/projects/data-science-streamlit-python
 <br>IBM Data Science Professional Certificate
@@ -48,3 +48,7 @@
 <br>https://www.edx.org/micromasters/mitx-statistics-and-data-science
 <br>Become a Data Scientist
 <br>https://careers.coursera.org/data-scientist/
+<br>Microsoft Certified: Azure Data Scientist Associate
+<br>https://docs.microsoft.com/en-us/learn/certifications/azure-data-scientist?tab=tab-instructor-led
+<br>The Microsoft Professional Program Retired on December 31, 2019.
+<br>https://academy.microsoft.com/en-us/professional-program/
